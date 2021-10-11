@@ -6,7 +6,7 @@
 #define NUM_THREADS 4
 
 typedef struct {
-	long x;
+    long x;
     long y;
     long id;
 } params;
@@ -20,7 +20,7 @@ void *f(void *args) {
 int main(int argc, char *argv[]) {
     pthread_t threads[NUM_THREADS];
     params args[NUM_THREADS];
-	int r;
+    int r;
     long id;
     void *status;
 
